@@ -153,9 +153,9 @@ def change_password(request):
       return redirect('profile')
   return render(request, 'change_password.html') 
 
-  def about(request):
-    return render(request, 'about.html')
+def about(request):
+  return render(request, 'about.html')
 
 
 def contact(request):
-    return render(request, 'contact.html')
+  return render(request, 'contact.html')
