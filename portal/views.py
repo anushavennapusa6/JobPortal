@@ -151,4 +151,10 @@ def change_password(request):
       user.save()
       messages.success(request, "Password Changed Successfully!")
       return redirect('profile')
-  return render(request, 'change_password.html')    
+  return render(request, 'change_password.html') 
+
+  def about(request):
+    return render(request, 'about.html')
+
+def contact(request):
+    return render(request, 'contact.html')   
